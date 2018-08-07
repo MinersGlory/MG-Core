@@ -51,7 +51,7 @@ public class ConnectionPool implements Closeable {
             int lowestLoad = Integer.MAX_VALUE;
             for (int i = 0; i < connections.length; i++) {
                 JDCConnection connection = connections[i];
-                if (!connection.getConnection().isValid(1) {
+                if (!connection.getConnection().isValid(1)) {
                     connection.terminate();
                     connections[i] = new JDCConnection(DriverManager.getConnection(url));
                 }
