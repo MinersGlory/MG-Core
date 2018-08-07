@@ -1,6 +1,16 @@
 name: MGCore
-main: com.minersglory.mgcore.Core
+main: com.minersglory.mgcore.MGCore
 version: ${project.version}
+load: STARTUP
 website: https://minersglory.com
 author: Zethrus
-description: Core plugin for Miners Glory and all its modular plugins.
+description: MGCore plugin for Miners Glory and all its modular plugins.
+commands:
+  reloadcore:
+    description: Unload all modules, reload the core plugin and load all modules.
+    permission: mgstaff.admin
+    permission-message: Sorry, you do not have permission!
+permissions:
+  mgstaff.admin:
+    default: op
+    description: this permission is for admins
