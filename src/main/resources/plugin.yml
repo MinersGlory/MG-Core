@@ -1,0 +1,6 @@
+name: MGCore
+main: com.minersglory.mgcore.Core
+version: ${project.version}
+website: https://minersglory.com
+author: Zethrus
+description: Core plugin for Miners Glory and all its modular plugins.
